@@ -12,16 +12,19 @@ const Footer = () => {
           </div>
           <div className="lg:flex flex-col mt-6 lg:mt-0 lg:flex-row gap-6 lg:gap-28 grid grid-cols-2 ml-8">
             <div className="flex flex-col gap-3">
-              <h1 className="font-semibold text-slate-300">Product</h1>
+              <h1 className="font-semibold text-slate-300">Links</h1>
               <ul className="text-slate-500">
                 <li className="cursor-pointer hover:text-slate-400">
-                  <Link to="/Clothing">Clothing</Link>
+                  <Link to="/MostFav">Shop</Link>
                 </li>
                 <li className="cursor-pointer hover:text-slate-400">
-                  <Link to="/Footwear">Footwear</Link>
+                  <Link to="/About">About</Link>
                 </li>
                 <li className="cursor-pointer hover:text-slate-400">
-                  <Link to="/Accessories">Accessories</Link>
+                  <Link to="/FAQs">FAQs</Link>
+                </li>
+                <li className="cursor-pointer hover:text-slate-400">
+                  <Link to="/Contact">Contact Us</Link>
                 </li>
               </ul>
             </div>
