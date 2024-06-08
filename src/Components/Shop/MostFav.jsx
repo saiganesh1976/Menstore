@@ -21,7 +21,7 @@ const ProductList = () => {
         Shop
       </h1>
       <div className="m-5 flex items-center justify-center">
-        <label htmlFor="serach" className="font-medium">Search Product:</label>
+        <label htmlFor="serach" className="font-medium">Search:</label>
         <input
           type="text"
           placeholder="Search the product..."
