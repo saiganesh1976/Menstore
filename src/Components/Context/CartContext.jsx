@@ -28,6 +28,7 @@ const CartProvider = ({ children }) => {
     setCartItems(
       cartItems.filter((item) => !(item.id === productId && item.size === size))
     );
+      setCartCount(cartCount - 1);
   };
 
   const changeQuantity = (productId, size, quantity) => {
