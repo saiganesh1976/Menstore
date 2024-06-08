@@ -186,8 +186,13 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
-              <Link to="/Cart" onClick={handleClick}>
+              <Link to="/Contact" onClick={handleClick}>
               Contact Us
+              </Link>
+            </li>
+            <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
+              <Link to="/cart" onClick={handleClick}>
+              Cart
               </Link>
             </li>
             <li className="my-4 py-2">
