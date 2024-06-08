@@ -171,23 +171,23 @@ const Navbar = () => {
               </Link>
             </li>
             <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
-              <Link to="/Clothing" onClick={handleClick}>
-                Clothing
+              <Link to="/MostFav" onClick={handleClick}>
+                Shop
               </Link>
             </li>
             <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
-              <Link to="/Footwear" onClick={handleClick}>
-                Footwear
+              <Link to="/About" onClick={handleClick}>
+                About
               </Link>
             </li>
             <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
-              <Link to="/Accessories" onClick={handleClick}>
-                Accessories
+              <Link to="/FAQs" onClick={handleClick}>
+                FAQs
               </Link>
             </li>
             <li className="my-4 py-2 border-b border-white hover:bg-orange-400 hover:rounded">
               <Link to="/Cart" onClick={handleClick}>
-                Cart
+              Contact Us
               </Link>
             </li>
             <li className="my-4 py-2">
