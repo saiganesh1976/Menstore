@@ -10,7 +10,7 @@ const VerifyOrder = () => {
   const userId = searchParams.get("userId");
   const navigate = useNavigate();
   const { clearCart } = useContext(CartContext);
-  const url = import.meta.env.VITE_API_URL || "http://localhost:5500"; // Use environment variable
+  const url = import.meta.env.VITE_API_URL || "https://menstore-backend.onrender.com"; // Use environment variable
 
   const verifyPayment = useCallback(async () => {
     if (!success || !session_id || !userId) {
