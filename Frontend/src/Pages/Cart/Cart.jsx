@@ -34,6 +34,7 @@ const Cart = () => {
     if (!user) {
       clearCart();
     }
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
