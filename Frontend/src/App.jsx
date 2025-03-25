@@ -5,7 +5,6 @@ import Footer from "./Components/Footer/Footer";
 import Home from "./Pages/Home/Home";
 import Contact from "./Pages/ContactUs/Contact";
 import Cart from "./Pages/Cart/Cart";
-import MostFav from "./Components/Shop/MostFav";
 import ProductDisplay from "./Components/Product/ProductDisplay";
 import NewArrivals from "./Pages/NewArrivals/NewArrivals";
 import Sale from "./Pages/Sale/Sale";
@@ -30,7 +29,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Cart" element={<Cart />} />
-        <Route path="/Shop" element={<MostFav />} />
         <Route path="/product/:id" element={<ProductDisplay />} />
         <Route path="/NewArrivals" element={<NewArrivals />} /> 
         <Route path="/Sale" element={<Sale/>} /> 
