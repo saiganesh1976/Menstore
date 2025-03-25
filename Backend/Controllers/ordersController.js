@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-const frontend_url = process.env.FRONTEND_URL || "http://localhost:5173";
+const frontend_url = process.env.FRONTEND_URL || "https://menstore-frontend.onrender.com";
 
 // Function to place an order
 export const placeOrder = async (req, res) => {
