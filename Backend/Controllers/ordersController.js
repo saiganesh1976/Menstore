@@ -1,4 +1,4 @@
-import Order from "../Models/OrderModel.js";
+import Order from "../Models/orderModel.js";
 import Stripe from "stripe";
 import dotenv from "dotenv";
 
