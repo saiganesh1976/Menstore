@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5500/api/contact",
+        "https://menstore-backend.onrender.com/api/contact",
         formData
       );
       toast.success(response.data.message || "Message sent successfully!", {
