@@ -10,6 +10,7 @@ const CartProvider = ({ children }) => {
     const existingItem = cartItems.find(
       (item) => item.id === product.id && item.size === size && item.color === color
     );
+
     if (existingItem) {
       setCartItems(
         cartItems.map((item) =>
@@ -23,29 +24,24 @@ const CartProvider = ({ children }) => {
     }
     setCartCount(cartCount + 1);
   };
-  
 
   const removeFromCart = (productId, size, color) => {
-    setCartItems(
-      cartItems.filter((item) => !(item.id === productId && item.size === size && item.color === color))
+    const updatedCart = cartItems.filter(
+      (item) => !(item.id === productId && item.size === size && item.color === color)
     );
-<<<<<<< HEAD:Frontend/src/Context/CartContext.jsx
-    setCartCount(cartCount - 1);
-=======
-      setCartCount(cartCount - 1);
->>>>>>> origin/main:src/Components/Context/CartContext.jsx
+    setCartItems(updatedCart);
+    setCartCount(updatedCart.length);
   };
-  
+
   const changeQuantity = (productId, size, color, quantity) => {
     setCartItems(
       cartItems.map((item) =>
         item.id === productId && item.size === size && item.color === color
-          ? { ...item, quantity: item.quantity + quantity }
+          ? { ...item, quantity: quantity }
           : item
       )
     );
   };
-  
 
   const value = { cartItems, addToCart, removeFromCart, changeQuantity, cartCount };
 
