@@ -29,7 +29,11 @@ const CartProvider = ({ children }) => {
     setCartItems(
       cartItems.filter((item) => !(item.id === productId && item.size === size && item.color === color))
     );
+<<<<<<< HEAD:Frontend/src/Context/CartContext.jsx
     setCartCount(cartCount - 1);
+=======
+      setCartCount(cartCount - 1);
+>>>>>>> origin/main:src/Components/Context/CartContext.jsx
   };
   
   const changeQuantity = (productId, size, color, quantity) => {
