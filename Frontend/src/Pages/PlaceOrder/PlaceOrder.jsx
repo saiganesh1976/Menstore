@@ -11,7 +11,7 @@ const PlaceOrder = () => {
   const { cartItems, clearCart } = useContext(CartContext);
   const { user } = useUser();
   const navigate = useNavigate();
-  const url = "http://localhost:5500";
+  const url = "https://menstore-backend.onrender.com";
 
   // Calculate order details
   const subtotal = cartItems.reduce(
