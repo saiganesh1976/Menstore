@@ -24,7 +24,7 @@ const MyOrders = () => {
   const { user } = useUser();
   const [orders, setOrders] = useState([]);
   const [trackingStatus, setTrackingStatus] = useState({});
-  const url = "http://localhost:5500";
+  const url = "https://menstore-backend.onrender.com";
 
   useEffect(() => {
     if (!user?.id) return;
