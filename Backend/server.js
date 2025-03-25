@@ -11,7 +11,7 @@ const app = express();
 const port = process.env.PORT || 5500;
 
 connectDatabase().then(() => {
-  app.use(cors({ origin: "http://localhost:5173", methods: ["GET", "POST"], credentials: true }));
+  app.use(cors({ origin: "https://menstore-frontend.onrender.com", methods: ["GET", "POST"], credentials: true }));
   app.use(express.json());
 
   app.use("/api/users", userRouter);
